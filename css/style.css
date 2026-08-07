@@ -106,15 +106,23 @@ body { font-family: var(--body-font); color: var(--black-color); font-size: var(
 .his_list li .txt {padding: 0 0 0 150px; }
 .his_list li .txt span { display: block; font-weight: var(--font-weight-bold); margin-bottom: calc(var(--spacing-1) / 2); }
 
-.his_data.animate__motion:nth-child(odd){animation-name: hisOdd; animation-duration: 0.5s;}
-.his_data.animate__motion:nth-child(even){animation-name: hisEven; animation-duration: 0.5s;}
-@keyframes hisOdd{
+.his_data.animate__motion:nth-child(1),.his_data.animate__motion:nth-child(2),
+.his_data.animate__motion:nth-child(3),.his_data.animate__motion:nth-child(4){animation-name: his1; animation-duration: 0.5s;}
+@keyframes his1{
     0%{opacity: 0; transform: translateY(300px);}
     30%{opacity: 0;transform: translateY(300px);}
 }
-@keyframes hisEven{
+@keyframes his2{
     0%{opacity: 0;transform: translateY(300px);}
     40%{opacity: 0;transform: translateY(300px);}
+}
+@keyframes his3{
+    0%{opacity: 0;transform: translateY(300px);}
+    50%{opacity: 0;transform: translateY(300px);}
+}
+@keyframes his4{
+    0%{opacity: 0;transform: translateY(300px);}
+    60%{opacity: 0;transform: translateY(300px);}
 }
 
 /* skills */
@@ -205,6 +213,11 @@ body { font-family: var(--body-font); color: var(--black-color); font-size: var(
 
   .about_data{ align-items: flex-start; }
   .history{ width: calc(100% - 310px); grid-template-columns: 1fr; }
+  .his_data.animate__motion:nth-child(1){animation-name: his1;}
+  .his_data.animate__motion:nth-child(2){animation-name: his2;}
+  .his_data.animate__motion:nth-child(3){animation-name: his3;}
+  .his_data.animate__motion:nth-child(4){animation-name: his4;}
+
 
   .work_data{gap: 50px;}
   .work_right{ align-items: center;}
