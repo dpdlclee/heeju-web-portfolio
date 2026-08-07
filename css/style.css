@@ -99,7 +99,7 @@ body { font-family: var(--body-font); color: var(--black-color); font-size: var(
 .profile img{ width: 80%; max-width: 315px; margin-bottom: var(--spacing-2); }
 .profile .profile_text p { font-size: var(--fs-24); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-1); }
 .profile .profile_text p .date { font-size: var(--fs-16); color: var(--dark-gray-color); font-weight: var(--font-weight-medium); }
-.history{ width: calc(100% - 280px); display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-1); }
+.history{ width: calc(100% - 280px); display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-1); will-change: transform, opacity;backface-visibility: hidden; }
 .his_title {font-size: var(--fs-24); font-weight: var(--font-weight-black); text-transform: capitalize; margin-bottom: var(--spacing-1);}
 .his_list li { position: relative; margin-bottom: var(--spacing-1); font-size: var(--fs-16);letter-spacing: -1px; }
 .his_list li .date { color: var(--dark-gray-color); position: absolute; left: 0; top: 0; }
@@ -200,10 +200,6 @@ body { font-family: var(--body-font); color: var(--black-color); font-size: var(
 
   .about_data{ align-items: flex-start; }
   .history{ width: calc(100% - 310px); grid-template-columns: 1fr; }
-  .his_data:nth-child(1){animation-delay:0s;}
-  .his_data:nth-child(2){animation-delay:.1s;}
-  .his_data:nth-child(3){animation-delay:.2s;}
-  .his_data:nth-child(4){animation-delay:.3s;}
 
 
   .work_data{gap: 50px;}
