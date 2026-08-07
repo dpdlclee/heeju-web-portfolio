@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="./images/favicon.ico">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<script defer src="./js/jquery-3.3.1.min.js"></script>
+<script defer src="https://kit.fontawesome.com/983714c979.js" crossorigin="anonymous"></script>
+<script defer src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+<script defer src="./js/jquery.scrolla.min.js"></script>
+<script defer src="./js/splitting.min.js"></script>
+<script defer src="./js/main.js"></script>
+<title>조희주 웹 포트폴리오</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="nav_logo">
+                <a href="#home" class="nav_img">
+                    <img src="./images/logo_b.png" alt="로고이미지"> Heeju Web Portfolio
+                </a>
+            </h1>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                    <a href="#home" class="nav_link active_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                    <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                    <a href="#skills" class="nav_link">Skills</a>
+                    </li>
+                    <li class="nav_item">
+                    <a href="#work" class="nav_link">Work</a>
+                    </li>
+                    <li class="nav_item">
+                    <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <!-- Home Data -->
+            <div class="container">
+                <div class="home_data">
+                    <h2 id="typeit" class="home_title">
+                        <!-- 무한에너지로 성장해 나아가는<br>퍼블리셔 조희주입니다. -->
+                    </h2>
+                    <p class="home_subtitle animate" data-animate="motion" data-splitting>
+                        안녕하세요. 사용자 경험을 디자인하고 구현하는 웹 퍼블리셔 조희주입니다.<br>
+                        사용자의 시선을 이해하고, 끊임없이 성장하며 더 나은 디지털 경험을 만들어갑니다.
+                    </p>
+                
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="title">about</h2>
+                <div class="about_data">
+                    <div class="profile">
+                        <img src="./images/about/profile_img.png" alt="프로필 이미지">
+                        <div class="profile_text">
+                            <p>
+                                조희주<br>
+                                choheeju<br>
+                                <span class="date">1997.07.02</span>
+                            </p>
+                            <ul>
+                                <li class="email">
+                                    <a href="href=mailto:dpdlclee@gmail.com"><i class="fa-regular fa-envelope"></i> dpdlclee@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="history">
+                        <div class="his_data animate" data-animate="motion">
+                            <p class="his_title">education</p>
+                            <ul class="his_list">
+                                <li>
+                                    <p class="date">2016.03 ~ 2021.02</p>
+                                    <p class="txt">
+                                        <span>조선대학교 학사 졸업</span>
+                                        신문방송학과 전공, 문화예술공연학과 연계전공
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="date">2022.12 ~ 2023.05</p>
+                                    <p class="txt">
+                                        <span>스마트인재개발원 수료</span>
+                                        신문방송학과 전공, 문화예술공연학과 연계전공
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="his_data animate" data-animate="motion">
+                            <p class="his_title">work</p>
+                            <ul class="his_list">
+                                <li>
+                                    <p class="date">2024.01 ~ 2026.08</p>
+                                    <p class="txt">
+                                        <span>(주)엑스메카</span>
+                                        웹디자인, 퍼블리싱, 유지보수 담당
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="his_data animate" data-animate="motion">
+                            <p class="his_title">certification</p>
+                            <ul class="his_list">
+                                <li>
+                                    <p class="date">2025.09</p>
+                                    <p class="txt">웹디자인개발기능사</p>
+                                </li>
+                                <li>
+                                    <p class="date">2025.09</p>
+                                    <p class="txt">ACA(photoshop)</p>
+                                </li>
+                                <li>
+                                    <p class="date">2025.09</p>
+                                    <p class="txt">ACA(illustration)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="his_data animate" data-animate="motion">
+                            <p class="his_title">award</p>
+                            <ul class="his_list">
+                                <li>
+                                    <p class="date">2023.05.10</p>
+                                    <p class="txt">
+                                        <span>K-디지털 핵심실무인재 양성사업 실전역량 프로젝트 최우수상 수상</span>
+                                        AI 음성분석 기반 ‘아동 발음 교정 프로그램’ 개발
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="title">skills</h2>
+                <p class="subtitle">HTML, CSS, JavaScript를 기반으로 반응형 웹과 사용자 중심의 UI를 구현합니다.<br>
+디자인과 개발 사이의 연결점에서 더 나은 웹 경험을 만들어갑니다.</p>
+                <div class="skills_data">
+                    <div class="skills_list">
+                        <article class="data">
+                            <div class="name">
+                              <!-- icon -->
+                              <img src="./images/skills/skills_ic01.png" alt="html 로고">
+                              <!-- skills name -->
+                              <span>HTML5</span>
+                            </div>
+                            <progress class="skills_progress" id="html5" max="100" value="90"></progress>
+                            <div>
+                              <!-- percentage -->
+                              <span class="skills_percentage">90%</span>
+                            </div>
+                        </article>
+                        <article class="data">
+                            <div class="name">
+                              <!-- icon -->
+                              <img src="./images/skills/skills_ic02.png" alt="css 로고">
+                              <!-- skills name -->
+                              <span>CSS</span>
+                            </div>
+                            <progress class="skills_progress" id="css" max="100" value="90"></progress>
+                            <div>
+                              <!-- percentage -->
+                              <span class="skills_percentage">90%</span>
+                            </div>
+
+                        </article>
+                        <article class="data">
+                            <div class="name">
+                              <!-- icon -->
+                              <img src="./images/skills/skills_ic03.png" alt="JavaScript 로고">
+                              <!-- skills name -->
+                              <span>JavaScript</span>
+                            </div>
+                            <progress class="skills_progress" id="javascript" max="100" value="70"></progress>
+                            <div>
+                            <!-- percentage -->
+                              <span class="skills_percentage">70%</span>
+                            </div>
+                        </article>
+                        <article class="data">
+                            <div class="name">
+                              <!-- icon -->
+                              <img src="./images/skills/skills_ic04.png" alt="jQuery 로고">
+                              <!-- skills name -->
+                              <span>jQuery</span>
+                            </div>
+                            <progress class="skills_progress" id="jquery" max="100" value="80"></progress>
+                            <div>
+                              <!-- percentage -->
+                              <span class="skills_percentage">80%</span>
+                            </div>
+                        </article>
+                        <article class="data">
+                            <div class="name">
+                              <!-- icon -->
+                              <img src="./images/skills/skills_ic05.png" alt="photoshop 로고">
+                              <!-- skills name -->
+                              <span>photoshop</span>
+                            </div>
+                            <progress class="skills_progress" id="photoshop" max="100" value="80"></progress>
+                            <div>
+                              <!-- percentage -->
+                              <span class="skills_percentage">80%</span>
+                            </div>
+                        </article>
+                        <article class="data">
+                            <div class="name">
+                              <!-- icon -->
+                              <img src="./images/skills/skills_ic06.png" alt="illustration 로고">
+                              <!-- skills name -->
+                              <span>illustration</span>
+                            </div>
+                            <progress class="skills_progress" id="illustration" max="100" value="80"></progress>
+                            <div>
+                              <!-- percentage -->
+                              <span class="skills_percentage">80%</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="skill_img">
+                        <ul>
+                            <li class="animate" data-animate="motion"><img src="./images/skills/his_ic01.png" alt="html"></li>
+                            <li class="animate" data-animate="motion"><img src="./images/skills/his_ic02.png" alt="css"></li>
+                            <li class="animate" data-animate="motion"><img src="./images/skills/his_ic03.png" alt="javascript"></li>
+                            <li class="animate" data-animate="motion"><img src="./images/skills/his_ic04.png" alt="jquery"></li>
+                            <li class="animate" data-animate="motion"><img src="./images/skills/his_ic05.png" alt="photoshop"></li>
+                            <li class="animate" data-animate="motion"><img src="./images/skills/his_ic06.png" alt="illustration"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section class="work section" id="work">
+            <div class="container">
+                <div class="work_data">
+                    <div class="work_left">
+                        <h2 class="title">WORK</h2>
+                        <div class="work_menu">
+                            <a href="#publishing" class="on">퍼블리싱<i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#design">웹디자인<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work_right">
+                        <div class="work_list publishing" id="publishing">
+                            <ul>
+                                <li class="animate" data-animate="motion">
+                                    <a href="https://inseong.gen.hs.kr:453/main/main.php" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img01.png" alt="인성고등학교"></div>
+                                        <p>
+                                            <span>인성고등학교</span>
+                                            web | 퍼블리싱 · 반응형 · 웹디자인
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="animate" data-animate="motion">
+                                    <a href="https://dpdlclee.github.io/heeju-crew.a.la.mode/" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img02.png" alt="크루알라모드"></div>
+                                        <p>
+                                            <span>크루알라모드</span>
+                                            web | 퍼블리싱 · 반응형 · 웹 클론 코딩
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="animate" data-animate="motion">
+                                    <a href="#none" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img02.png" alt="라한호텔"></div>
+                                        <p>
+                                            <span>라한호텔</span>
+                                            web | 퍼블리싱 · 반응형 · 웹 클론 코딩
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="animate" data-animate="motion">
+                                    <a href="#none" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img02.png" alt="바블링"></div>
+                                        <p>
+                                            <span>아동 발음 교육 프로그램 '바블링'</span>
+                                            web | 프론트엔드 · 웹디자인 · 개발원 프로젝트
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="work_list design" id="design">
+                            <ul>
+                                <li class="animate" data-animate="motion">
+                                    <a href="https://gartshub.gen.go.kr/main/main.php" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img05.png" alt="G-Art Hub"></div>
+                                        <p>
+                                            <span>G-Arts Hub</span>
+                                            프로젝트 기간 | 3일
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="animate" data-animate="motion">
+                                    <a href="https://www.xmecca.com/sian/oasishospital.co.kr/chj241104/A/index.html" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img06.png" alt="오아시스요양병원"></div>
+                                        <p>
+                                            <span>오아시스요양병원</span>
+                                            프로젝트 기간 | 3일
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="animate" data-animate="motion">
+                                    <a href="https://gsa.gen.hs.kr:453/main/main.php" target="_blank">
+                                        <div class="img"><img src="./images/work/work_img07.png" alt="광주과학고등학교"></div>
+                                        <p>
+                                            <span>광주과학고등학교</span>
+                                            프로젝트 기간 | 3일
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="animate" data-animate="motion">
+                                    <a href="http://www.xmecca.com/sian/xmecca.com/chj240724/A/index.html" target="_blank">
+                                    <div class="img"><img src="./images/work/work_img08.png" alt="엑스메카"></div>
+                                    <p>
+                                        <span>엑스메카</span>
+                                        프로젝트 기간 | 3일
+                                    </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact_data">
+                    <div class="contact_title">
+                        <p  class="animate" data-animate="motion" data-splitting>
+                            함께 일할 웹 퍼블리셔를 찾고 계신가요?
+                        </p>
+                    </div>
+                    <div class="contact_mail">
+                        <p class="address">dpdlclee@gmail.com</p>
+                        <p>
+                            저에게 궁금한 점이 있으시다면 연락해 주세요 :)<br>
+                            빠르게 답장 드리겠습니다!
+                        </p>
+                        <a href="mailto:dpdlclee@gmail.com" class="shortcut_arrow">보내기 <i class="fa-solid fa-circle-chevron-right arrow_ic" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+          <p class="footer_title">portfolio</p>
+          <p class="footer_copy">Copyright &copy; 2026 HEEJU All rights reserved. </p>
+      </div>
+    </footer>
+</body>
+</html>
