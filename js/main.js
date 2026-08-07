@@ -137,7 +137,7 @@ typeit
 $(function(){
     $('.animate').scrolla({
         mobile: true, 
-        once: false
+        once: true
     });
 
 })
