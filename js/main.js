@@ -129,7 +129,7 @@ const typeit = new TypeIt('#typeit', {
 })
 
 typeit
-  .type('<span>무한에너지로 성장해 나아가는</span>')
+  .type('무한에너지로 성장해 나아가는<br>')
   .type('퍼블리셔 조희주입니다.')
   .go();
 
