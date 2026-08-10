@@ -120,7 +120,7 @@ body { font-family: var(--body-font); color: var(--black-color); font-size: var(
 .skills_list .data .name {display: flex; align-items: center; justify-content: center; width: 100px; font-weight: var(--font-weight-bold);}
 .skills_list .data .name img{ display: none; margin-right: 10px; }
 .skills_list .data .skills_percentage{ color: var(--dark-gray-color); }
-.skills_list .data .skills_progress { appearance: none; height: 10px; width: 280px;  margin: 0 20px; }
+.skills_list .data .skills_progress { appearance: none; -webkit-appearance: none; height: 10px; width: 280px;  margin: 0 20px; }
 .skills_list .data .skills_progress::-webkit-progress-bar{background: var(--light-gray-color); border-radius: 12px; width: 100%; overflow: hidden;}
 .skills_list .data .skills_progress::-webkit-progress-value { background: var(--primary-color); border-radius: 12px; width: 48px; }
 
